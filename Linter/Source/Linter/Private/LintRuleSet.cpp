@@ -4,6 +4,8 @@
 #include "AssetRegistry/AssetRegistryModule.h"
 #include "Modules/ModuleManager.h"
 #include "HAL/RunnableThread.h"
+#include "AnyObject_LinterDummyClass.h"
+#include "LinterNamingConvention.h"
 
 ULintRuleSet::ULintRuleSet(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -13,7 +15,17 @@ ULintRuleSet::ULintRuleSet(const FObjectInitializer& ObjectInitializer)
 
 ULinterNamingConvention* ULintRuleSet::GetNamingConvention() const
 {
-	return NamingConvention.Get();
+    if (NamingConvention.IsValid())
+    {
+        // Load the asset synchronously and return it
+        return NamingConvention.LoadSynchronous();
+    }
+    else
+    {
+        // Handle the case where the NamingConvention asset is not valid
+        // You might want to log an error or return nullptr depending on your needs
+        return nullptr;
+    }
 }
 
 TArray<FLintRuleViolation> ULintRuleSet::LintPath(TArray<FString> AssetPaths, FScopedSlowTask* ParentScopedSlowTask /*= nullptr*/) const

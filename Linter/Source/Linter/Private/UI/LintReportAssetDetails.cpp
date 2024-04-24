@@ -1,4 +1,3 @@
-// Copyright 2019-2020 Gamemakin LLC. All Rights Reserved.
 #include "UI/LintReportAssetDetails.h"
 #include "LinterStyle.h"
 #include "Widgets/Layout/SBorder.h"
@@ -17,9 +16,11 @@
 #include "Widgets/Text/STextBlock.h"
 #include "Framework/Views/ITypedTableView.h"
 #include "UI/LintReportAssetError.h"
+#include "UI/LintReportAssetErrorList.h"
 #include "LintRule.h"
 #include "AssetThumbnail.h"
 
+// Copyright 2019-2020 Gamemakin LLC. All Rights Reserved.
 
 #define LOCTEXT_NAMESPACE "LintReport"
 

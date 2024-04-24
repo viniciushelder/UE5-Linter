@@ -8,6 +8,12 @@
 #include "Widgets/Views/SListView.h"
 #include "Widgets/Views/STableRow.h"
 #include "Widgets/Layout/SBox.h"
+#include "LinterStyle.h"
+#include "ContentBrowserModule.h"
+#include "AssetRegistry/AssetRegistryModule.h"
+#include "Misc/AssetRegistryInterface.h"
+#include "IContentBrowserSingleton.h"
+
 
 #define LOCTEXT_NAMESPACE "LintReport"
 

@@ -4,7 +4,7 @@
 #include "Templates/SharedPointer.h"
 #include "DetailCategoryBuilder.h"
 #include "IDetailChildrenBuilder.h"
-
+#include "AnyObject_LinterDummyClass.h"
 TSharedRef<IDetailCustomization> FLinterNamingConventionDetails::MakeInstance()
 {
 	return MakeShareable(new FLinterNamingConventionDetails());

@@ -4,6 +4,7 @@
 #include "CoreMinimal.h"
 #include "Misc/ScopedSlowTask.h"
 #include "LintRule.h"
+#include "LinterNamingConvention.h"
 
 #include "LintRuleSet.generated.h"
 

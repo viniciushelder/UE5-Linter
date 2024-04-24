@@ -1,3 +1,4 @@
+// Copyright 2019-2020 Gamemakin LLC. All Rights Reserved.
 #include "UI/LintReportAssetErrorList.h"
 #include "LinterStyle.h"
 #include "Widgets/Layout/SBorder.h"
@@ -10,7 +11,6 @@
 #include "Widgets/Input/SHyperlink.h"
 #include "Widgets/Layout/SSpacer.h"
 #include "IAssetTools.h"
-// Copyright 2019-2020 Gamemakin LLC. All Rights Reserved.
 #include "AssetToolsModule.h"
 #include "Misc/MessageDialog.h"
 #include "Internationalization/Internationalization.h"

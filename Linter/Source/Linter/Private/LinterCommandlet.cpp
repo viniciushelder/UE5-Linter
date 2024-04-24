@@ -14,6 +14,7 @@
 #include "Serialization/JsonSerializer.h"
 #include "Linter.h"
 #include "LintRule.h"
+#include "LinterSettings.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LinterCommandlet, All, All);
 

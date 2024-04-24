@@ -19,6 +19,7 @@
 #include "Framework/Views/ITypedTableView.h"
 #include "UI/LintReportAssetError.h"
 #include "LintRule.h"
+#include "UI/LintReportRuleError.h"
 
 #define LOCTEXT_NAMESPACE "LintReport"
 

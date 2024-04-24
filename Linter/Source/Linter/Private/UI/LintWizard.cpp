@@ -24,6 +24,14 @@
 #include "LintRuleSet.h"
 #include "LinterSettings.h"
 #include "UI/SAssetLinkWidget.h"
+#include "Internationalization/Internationalization.h"
+#include "AssetToolsModule.h"
+#include "IDesktopPlatform.h"
+#include "DesktopPlatformModule.h"
+#include "ContentBrowserModule.h"
+
+
+#define LOCTEXT_NAMESPACE "Linter"
 
 
 

@@ -2,6 +2,8 @@
 #pragma once
 #include "Widgets/SCompoundWidget.h"
 #include "Widgets/DeclarativeSyntaxSupport.h"
+#include "LintRule.h"
+
 
 class SLintReportAssetErrorList : public SCompoundWidget
 {

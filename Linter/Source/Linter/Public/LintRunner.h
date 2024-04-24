@@ -6,6 +6,12 @@
 #include "HAL/Runnable.h"
 #include "AssetRegistry/AssetData.h"
 #include "Linter.h"
+#include "LintRule.h"
+#include "LintRuleSet.h"
+
+
+
+
 
 class FLintRunner : public FRunnable
 {
