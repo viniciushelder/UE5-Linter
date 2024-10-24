@@ -63,3 +63,4 @@ void SLintReportRuleError::Construct(const FArguments& Args)
 	];
 }
 
+#undef LOCTEXT_NAMESPACE
