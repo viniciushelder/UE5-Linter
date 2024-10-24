@@ -205,3 +205,5 @@ void SLintReportRuleDetails::Construct(const FArguments& Args)
 		ThumbnailBox->SetContent(RuleThumbnail->MakeThumbnailWidget());
 	}
 }
+
+#undef LOCTEXT_NAMESPACE

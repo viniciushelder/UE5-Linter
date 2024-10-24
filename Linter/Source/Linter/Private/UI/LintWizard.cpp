@@ -656,3 +656,5 @@ bool SLintWizard::LoadAssetsIfNeeded(const TArray<FString>& ObjectPaths, TArray<
 
 	return true;
 }
+
+#undef LOCTEXT_NAMESPACE

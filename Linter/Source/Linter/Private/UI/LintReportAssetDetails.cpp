@@ -143,3 +143,5 @@ void SLintReportAssetDetails::Construct(const FArguments& Args)
 		]
 	];
 }
+
+#undef LOCTEXT_NAMESPACE
