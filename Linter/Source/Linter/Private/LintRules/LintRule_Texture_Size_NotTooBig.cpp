@@ -2,6 +2,7 @@
 #include "LintRules/LintRule_Texture_Size_NotTooBig.h"
 #include "LintRuleSet.h"
 #include "LinterNamingConvention.h"
+#include "Engine/Texture2D.h"
 #include "HAL/FileManager.h"
 
 ULintRule_Texture_Size_NotTooBig::ULintRule_Texture_Size_NotTooBig(const FObjectInitializer& ObjectInitializer)

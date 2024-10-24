@@ -1,7 +1,11 @@
 // Copyright 2019-2020 Gamemakin LLC. All Rights Reserved.
 #pragma once
 #include "Widgets/SCompoundWidget.h"
-#include "LintRule.h"
+#include "AssetRegistry/AssetData.h"
+
+class FAssetThumbnailPool;
+class SBox;
+struct FLintRuleViolation;
 
 class SLintReportRuleDetails : public SCompoundWidget
 {
@@ -12,7 +16,7 @@ public:
 	}
 	SLATE_ATTRIBUTE(TArray<TSharedPtr<FLintRuleViolation>>, RuleViolations)
 	SLATE_ATTRIBUTE(TSharedPtr<FAssetThumbnailPool>, ThumbnailPool)
-	
+
 	SLATE_END_ARGS()
 
 	TAttribute<TArray<TSharedPtr<FLintRuleViolation>>> RuleViolations;

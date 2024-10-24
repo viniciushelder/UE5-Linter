@@ -9,6 +9,8 @@
 #include "IContentBrowserSingleton.h"
 #include "AssetRegistry/AssetRegistryModule.h"
 #include "Widgets/Input/SHyperlink.h"
+#include "Widgets/Images/SImage.h"
+#include "Widgets/Layout/SBox.h"
 #include "Widgets/Layout/SSpacer.h"
 #include "IAssetTools.h"
 #include "AssetToolsModule.h"
