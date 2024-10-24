@@ -6,6 +6,8 @@
 
 #include "LintRule_Blueprint_Base.generated.h"
 
+class ULintRuleSet;
+
 /**
  *Comment
  */

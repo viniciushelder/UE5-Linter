@@ -2,11 +2,11 @@
 #pragma once
 
 #include "Widgets/SCompoundWidget.h"
-#include "Widgets/Layout/SScrollBox.h"
 
-#include "LintReportAssetError.h"
-#include "LintRule.h"
-
+class SScrollBox;
+class STextBlock;
+class ULintRuleSet;
+struct FLintRuleViolation;
 
 class SLintReport : public SCompoundWidget
 {

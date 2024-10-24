@@ -3,6 +3,7 @@
 #include "UI/LintReportruleErrorList.h"
 #include "LinterStyle.h"
 #include "Widgets/Layout/SBorder.h"
+#include "Widgets/Views/SListView.h"
 #include "EditorStyleSet.h"
 #include "Widgets/SBoxPanel.h"
 #include "Widgets/Layout/SExpandableArea.h"

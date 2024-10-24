@@ -15,6 +15,7 @@
 #include "Misc/MessageDialog.h"
 #include "Internationalization/Internationalization.h"
 #include "Widgets/Text/STextBlock.h"
+#include "Widgets/Views/SListView.h"
 #include "Framework/Views/ITypedTableView.h"
 #include "UI/LintReportAssetError.h"
 #include "LintRule.h"

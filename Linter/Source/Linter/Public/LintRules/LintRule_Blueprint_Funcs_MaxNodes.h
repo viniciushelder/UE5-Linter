@@ -7,6 +7,8 @@
 
 #include "LintRule_Blueprint_Funcs_MaxNodes.generated.h"
 
+class UEdGraphNode;
+
 UCLASS(BlueprintType, Blueprintable, Abstract)
 class LINTER_API ULintRule_Blueprint_Funcs_MaxNodes : public ULintRule_Blueprint_Base
 {

@@ -3,6 +3,10 @@
 #include "UI/LintReportAssetError.h"
 
 #include "LintRule.h"
+#include "Widgets/Input/SButton.h"
+#include "Widgets/Input/SComboButton.h"
+#include "Widgets/Layout/SScrollBox.h"
+#include "Widgets/Layout/SSpacer.h"
 #include "Widgets/Views/STableRow.h"
 #include "Widgets/Views/SListView.h"
 #include "Widgets/SBoxPanel.h"
@@ -13,7 +17,6 @@
 #include "Containers/Map.h"
 #include "LinterSettings.h"
 #include "Misc/ScopedSlowTask.h"
-#include "Widgets/Layout/SSpacer.h"
 #include "Dom/JsonObject.h"
 #include "Serialization/JsonWriter.h"
 #include "Policies/PrettyJsonPrintPolicy.h"
@@ -22,11 +25,12 @@
 #include "DesktopPlatformModule.h"
 #include "IDesktopPlatform.h"
 #include "Misc/FileHelper.h"
-#include "Widgets/Input/SComboButton.h"
 #include "UI/LintReportRuleDetails.h"
 #include "LinterStyle.h"
 #include "Linter.h"
 #include "Interfaces/IPluginManager.h"
+#include "Framework/Application/SlateApplication.h"
+#include "Framework/MultiBox/MultiBoxBuilder.h"
 
 #define LOCTEXT_NAMESPACE "Linter"
 

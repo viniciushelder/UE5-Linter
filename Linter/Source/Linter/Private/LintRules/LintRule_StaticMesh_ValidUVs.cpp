@@ -2,6 +2,7 @@
 #include "LintRules/LintRule_StaticMesh_ValidUVs.h"
 #include "LintRuleSet.h"
 #include "LinterNamingConvention.h"
+#include "Engine/StaticMesh.h"
 #include "HAL/FileManager.h"
 
 ULintRule_StaticMesh_ValidUVs::ULintRule_StaticMesh_ValidUVs(const FObjectInitializer& ObjectInitializer)
