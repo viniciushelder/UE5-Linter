@@ -34,6 +34,10 @@
 #include "DesktopPlatformModule.h"
 #include "ContentBrowserModule.h"
 
+#include "Runtime/Launch/Resources/Version.h"
+#if (ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5) || ENGINE_MAJOR_VERSION > 5
+#include "Templates/GuardValueAccessors.h"
+#endif
 
 #define LOCTEXT_NAMESPACE "Linter"
 
@@ -622,7 +626,12 @@ bool SLintWizard::LoadAssetsIfNeeded(const TArray<FString>& ObjectPaths, TArray<
 		FScopedSlowTask SlowTask(UnloadedObjectPaths.Num(), LOCTEXT("LoadingObjects", "Loading Objects..."));
 		SlowTask.MakeDialog();
 
-		GIsEditorLoadingPackage = true;
+		// Set IsEditorLoadingPackage to avoid dirtying the Actor package if Modify() is called during the load sequence
+#if (ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5) || ENGINE_MAJOR_VERSION > 5
+		TGuardValueAccessors<bool> IsEditorLoadingPackageGuard(UE::GetIsEditorLoadingPackage, UE::SetIsEditorLoadingPackage, true);
+#else
+		TGuardValue<bool> IsEditorLoadingPackageGuard(GIsEditorLoadingPackage, true);
+#endif
 
 		const ELoadFlags LoadFlags = LOAD_None;
 		bool bSomeObjectsFailedToLoad = false;
@@ -650,7 +659,6 @@ bool SLintWizard::LoadAssetsIfNeeded(const TArray<FString>& ObjectPaths, TArray<
 				break;
 			}
 		}
-		GIsEditorLoadingPackage = false;
 
 		if (bSomeObjectsFailedToLoad)
 		{
