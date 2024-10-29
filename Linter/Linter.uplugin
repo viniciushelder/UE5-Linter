@@ -17,12 +17,12 @@
 			"Name": "Linter",
 			"Type": "Editor",
 			"LoadingPhase": "PreDefault",
-			"WhitelistPlatforms": [
+			"PlatformAllowList": [
 				"Win64",
 				"Mac",
 				"Linux"
 			],
-			"BlacklistTargets": [
+			"TargetDenyList": [
 				"Server",
 				"Client"
 			]
@@ -31,12 +31,12 @@
 			"Name": "GamemakinLinter",
 			"Type": "Editor",
 			"LoadingPhase": "PreDefault",
-			"WhitelistPlatforms": [
+			"PlatformAllowList": [
 				"Win64",
 				"Mac",
 				"Linux"
 			],
-			"BlacklistTargets": [
+			"TargetDenyList": [
 				"Server",
 				"Client"
 			]
@@ -45,12 +45,12 @@
 			"Name": "MarketplaceLinter",
 			"Type": "Editor",
 			"LoadingPhase": "PreDefault",
-			"WhitelistPlatforms": [
+			"PlatformAllowList": [
 				"Win64",
 				"Mac",
 				"Linux"
 			],
-			"BlacklistTargets": [
+			"TargetDenyList": [
 				"Server",
 				"Client"
 			]
